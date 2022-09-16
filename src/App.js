@@ -13,13 +13,14 @@ function App() {
 
     return (
         <div>
-            <TopMenu/>
+            <TopMenu />
             <Switch>
-                <Route path exact="/"> <HomePage/></Route>
+                <Route  exact path="/"> <HomePage/></Route>
                 <Route path="/login"><LoginPage/></Route>
                 <Route path="/blogposts"><BlogView/></Route>
-                <Route path="/blogposts/blogId:"><BlogPosts/></Route>
+                <Route path="/blogposts/:blogId"><BlogPosts/></Route>
             </Switch>
+
         </div>
     );
 }

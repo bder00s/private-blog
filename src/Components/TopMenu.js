@@ -4,9 +4,9 @@ import {NavLink} from "react-router-dom";
 
 function TopMenu() {
     return (
-        <div className="navBar">
+        <div >
             <nav>
-                <ul>
+                <ul className="navBar">
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/login">Login pagina</NavLink></li>
                     <li><NavLink to="/blogposts">Blog Overview</NavLink></li>
