@@ -3,27 +3,25 @@ import posts from '../data/posts.json';
 import {Link} from "react-router-dom";
 
 
+
 function BlogView() {
 
     return (
-        <div className="blog-view">
+        <article>
             <h1>Blog overzichtspagina</h1>
             <h2>Aantal blogposts: {posts.length} </h2>
             <ol>
-                {posts.map((blogs) => {
-                    return <li>
-                        <Link to={ `/blogposts/${blogs.id}`}
-
-                            >
-
-
-                            {blogs.title}</Link>
+                {posts.map((blog) => {
+                    return <li key={blog.id}>
+                        <Link to={`/blogposts/${blog.id}`}>
+                            {blog.title}
+                        </Link>
                     </li>
                 })}
 
             </ol>
 
-        </div>
+        </article>
     )
 }
 

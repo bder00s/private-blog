@@ -5,19 +5,21 @@ import posts from '../data/posts.json';
 
 function BlogPosts() {
     const {blogId} = useParams();
-    const currentPost = posts.find((idFromBlog)=> {
-        return idFromBlog.id === blogId
+    const currentPost = posts.find((post)=> {
+        return post.id === blogId;
 
     });
     console.log(currentPost);
+
     return (
+        <>
         <article>
         <h1>{currentPost.title}</h1>
         <h3>{currentPost.date}</h3>
             <p>{currentPost.content}</p>
 
         </article>
-
+        </>
     );
 
 }

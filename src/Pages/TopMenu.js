@@ -7,7 +7,7 @@ function TopMenu() {
         <div >
             <nav>
                 <ul className="navBar">
-                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink exact to="/">Home</NavLink></li>
                     <li><NavLink to="/login">Login pagina</NavLink></li>
                     <li><NavLink to="/blogposts">Blog Overview</NavLink></li>
                     <li><NavLink to="/blogposts/blogId:">Blogposts</NavLink></li>
