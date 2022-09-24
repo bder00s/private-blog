@@ -12,8 +12,7 @@ function BlogView() {
             <h2>Aantal blogposts: {posts.length} </h2>
             <ol>
                 {posts.map((blog) => {
-                    return <li key={blog.id}>
-                        <Link to={`/blogposts/${blog.id}`}>
+                    return <li key={blog.id}><Link to={`/blogposts/${blog.id}`}>
                             {blog.title}
                         </Link>
                     </li>

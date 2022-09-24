@@ -5,14 +5,13 @@ import {useHistory} from "react-router-dom";
 function LoginPage() {
     const history = useHistory()
     function handleClick() {
-        history.push("/blogposts/")
+        history.push("/blogposts")
     }
     return (
-        <button
-            onClick={handleClick}
-                type="button">
-            Login
-        </button>
+                <button onClick={handleClick}
+                        type="button"
+                >Login
+                </button>
 
 
 

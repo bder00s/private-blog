@@ -2,7 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 
 
-function TopMenu() {
+function TopMenu({logIn, toggleLogIn}) {
     return (
         <div >
             <nav>
